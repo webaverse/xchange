@@ -1,5 +1,5 @@
 import styles from './index.module.css';
-import Text from 'components/Text';
+import Text from 'components/text';
 
 function CheckBox({label, className}) {
     return (
