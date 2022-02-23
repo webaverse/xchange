@@ -1,8 +1,4 @@
 .container {
-    /* display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px; */
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -28,26 +24,10 @@
     border: 1px solid #fff;
     margin-right: 9px;
   }
-    
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    display: none;
+
+  .container input:checked ~ div {
+    color: white;
   }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: flex;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    width: 6px;
-    height: 12px;
-    border: solid #28af91;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-left: 5px;
+  .container input:checked ~ .checkmark {
+    background-color: #28af91;
   }
