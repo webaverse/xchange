@@ -17,6 +17,9 @@ module.exports = {
         stone: {
           900: '#1a1d22'
         }
+      },
+      spacing: {
+        'available': '-webkit-fill-available',
       }
     },
   },
