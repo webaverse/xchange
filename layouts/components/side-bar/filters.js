@@ -42,7 +42,7 @@ const filters = [
 
 function Filters() {
     return (
-        <div className='flex flex-col pt-14 overflow-y-hidden hover:overflow-y-scroll p-10 section'>
+        <div className='flex flex-col pt-14 overflow-y-hidden hover:overflow-y-scroll p-[2vw] section'>
             <h6 className='text-white'>UpStreet</h6>
             {
                 filters.map((filter, id) => (

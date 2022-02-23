@@ -22,8 +22,8 @@
   
   /* Create a custom checkbox */
   .checkmark {
-    height: 17px;
-    width: 17px;
+    min-height: 17px;
+    min-width: 17px;
     background-color: #3b3b3b;
     border: 1px solid #fff;
     margin-right: 9px;

@@ -1,11 +1,14 @@
-import styles from './index.module.css'
+import styles from './index.module.css';
+import Text from 'components/Text';
 
 function CheckBox({label, className}) {
     return (
         <label className={styles.container + ' flex flex-row items-center ' + className}>
             <input type="checkbox" />
             <span className={styles.checkmark}></span>
-            {label}
+            <Text>
+                {label}
+            </Text>
         </label>
     )
 }

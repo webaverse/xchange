@@ -13,6 +13,9 @@ module.exports = {
         },
         teal: {
           400: '#28af91'
+        },
+        stone: {
+          900: '#1a1d22'
         }
       }
     },
