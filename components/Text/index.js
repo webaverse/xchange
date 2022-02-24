@@ -1,6 +1,6 @@
-function Text({children, className=""}) {
+function Text({children, className="", onClick}) {
     return (
-        <div className={`${className} truncate`}>
+        <div className={`${className} truncate`} onClick={onClick}>
             {children}
         </div>
     )

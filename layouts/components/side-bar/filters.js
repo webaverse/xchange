@@ -29,7 +29,7 @@ const filters = [
             'Ranged'
         ]
     }, {
-        label: 'Verhicles',
+        label: 'Vehicles',
         children: [
             'Aerial',
             'Locomotion'

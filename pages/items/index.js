@@ -12,10 +12,14 @@ const result = [
 function Items() {
     const router = useRouter()
     const search = router.query
+
+    const handleClick = (ev) => {
+        router.push('/items/1')
+    }
     return (
         <div className='grid grid-cols-4 gap-4'>
         {result.map((item, id) => (
-            <div key={id}>
+            <div key={id} className='cursor-pointer' onClick={handleClick}>
                 <div className='flex w-full items-center pb-5'>
                     <img src={item.src} alt={item.name} />
                 </div>
