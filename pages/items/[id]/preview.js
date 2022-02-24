@@ -1,7 +1,7 @@
 function Preview({mode, item}) {
     return (
         <div>
-            <img src={item.src} alt='preview'/>
+            This is preveiw
         </div>
     )
 }
