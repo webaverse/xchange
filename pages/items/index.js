@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 
-import Text from 'components/text'
+import Text from 'components/text1'
 
 const result = [
     {src: '/search/search-1.png', name: 'Name art work', price: '2,024ETH'},

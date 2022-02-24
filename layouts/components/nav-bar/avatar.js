@@ -1,4 +1,4 @@
-import Text from 'components/text'
+import Text from 'components/text1'
 import Image from 'next/image'
 import AvatarImg from 'public/avatar.png'
 import PlayImg from 'public/play.png'
