@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Text from "components/text"
 import { useRouter } from 'next/router'
 

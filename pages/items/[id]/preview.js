@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 function Preview({mode, item}) {
     return (
         <div>
-            This is preveiw
+            <img src={item && item['src']} alt="Preview" />
         </div>
     )
 }
