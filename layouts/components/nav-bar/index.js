@@ -1,5 +1,5 @@
 import Navigation from './navigation'
-import Avatar from './Avatar'
+import Avatar from './avatar'
 
 function NavBar() {
     return (

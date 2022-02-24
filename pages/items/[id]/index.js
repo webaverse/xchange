@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import Text from 'components/text'
-import Preview from './preview'
+import Preview from './components/preview'
 
 const modes = ["Normal", "Wireframe", "LIT", "InGame"]
 
@@ -11,7 +11,7 @@ function Detail() {
         src:'/detail.png'
     }
     return (
-        <div className='flex flex-col pt-24'>
+        <div className='flex flex-col pt-24 h-available'>
             <div className='flex flex-row relative justify-center'>
                 <Text className='text text-white absolute left-0 text-2xl font-bold top-[-8px]'>View options</Text>
                 <div className='flex flex-row space-x-6'>
@@ -24,7 +24,9 @@ function Detail() {
                 }
                 </div>
             </div>
-            <Preview item={demo} mode={mode}/>
+            <div className='flex w-full h-available items-center justify-center relative mt-8'>
+                <Preview item={demo} mode={mode}/>
+            </div>
         </div>
     )
 }
