@@ -1,13 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
-import Text from 'components/text'
+import { useEffect, useState } from 'react'
+
 import PreviewBadge from './preview-badge.js'
+import PreviewInfo from './preview-info.js'
+import PreviewActions from './preview-actions'
 function Preview({mode, item}) {
+    
+    const [showInfo, setShowInfo] = useState(false) 
+
+    const handleInfo = () => {
+        setShowInfo(true)
+    }
+
+    useEffect( () => {
+        if(showInfo) {
+            setTimeout(() => setShowInfo(false), 3000)   
+        }
+    }, [showInfo])
     return (
         <>
-            <PreviewBadge />
-            <div className="w-2/3">
+            <PreviewBadge handleInfo={handleInfo}/>
+            <div className="w-2/3 pt-28">
                 <img src={item && item['src']} alt="Preview" />
             </div>
+            {
+                showInfo ? <PreviewInfo /> : null
+            }
+            <PreviewActions />
         </>
     )
 }

@@ -24,7 +24,7 @@ function Detail() {
                 }
                 </div>
             </div>
-            <div className='flex w-full h-available items-center justify-center relative mt-8'>
+            <div className='flex w-full h-available items-center justify-center relative mt-8 flex-col'>
                 <Preview item={demo} mode={mode}/>
             </div>
         </div>

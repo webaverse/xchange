@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Text from 'components/text'
 
-function PreviewBadge({mode, item}) {
+function PreviewBadge({mode, item, handleInfo}) {
     return (
         <>
             <div className="absolute top-0 left-0">
@@ -11,8 +11,8 @@ function PreviewBadge({mode, item}) {
                         <Text className='text-neutral-400 font-normal text-sm flex flex-row mt-3'> Current price: <Text className='text-teal-400 ml-4'> 204 ETH </Text> </Text>
                     </Text>
                     <div className='h-8 flex flex-row space-x-4 mt-1'>
-                        <img src='/car.png' alt='Item type' />
-                        <img src='/info.png' alt='Item type' />
+                        <img src='/car.png' alt='Item type' className='cursor-pointer' />
+                        <img src='/info.png' alt='Item type' className='cursor-pointer' onClick={handleInfo} />
                     </div>
                 </div>
             </div>
