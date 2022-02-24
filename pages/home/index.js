@@ -1,4 +1,4 @@
-import Text from "components/text1"
+import Text from "components/text"
 import { useRouter } from 'next/router'
 
 const items = [

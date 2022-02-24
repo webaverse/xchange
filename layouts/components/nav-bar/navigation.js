@@ -1,4 +1,4 @@
-import Text from 'components/text1'
+import Text from 'components/text'
 
 const items = [
     {

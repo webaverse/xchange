@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import Text from 'components/text1'
+import Text from 'components/text'
 import Preview from './preview'
 
 const modes = ["Normal", "Wireframe", "LIT", "InGame"]
