@@ -18,7 +18,7 @@ function Items() {
         router.push('/items/1')
     }
     return (
-        <div className='grid grid-cols-4 gap-4'>
+        <div className='grid md:grid-cols-4 grid-cols-2 gap-4'>
         {result.map((item, id) => (
             <div key={id} className='cursor-pointer' onClick={handleClick}>
                 <div className='flex w-full items-center pb-5'>

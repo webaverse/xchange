@@ -11,9 +11,9 @@ function Detail() {
         src:'/detail.png'
     }
     return (
-        <div className='flex flex-col md:pt-24 pt-4 h-available'>
-            <div className='flex md:flex-row flex-col relative justify-center'>
-                <Text className='text text-white md:absolute left-0 text-2xl font-bold top-[-8px] pb-2 w-full md:text-left text-center'>View options</Text>
+        <div className='flex flex-col lg:pt-24 pt-4 h-available'>
+            <div className='flex lg:flex-row flex-col relative justify-center'>
+                <Text className='text text-white lg:absolute left-0 text-2xl font-bold top-[-8px] pb-2 w-full lg:text-left text-center'>View options</Text>
                 <div className='flex flex-row space-x-6 w-full justify-center'>
                 {
                     modes.map((item, i) => (
