@@ -28,7 +28,7 @@ export default function Home() {
       <div className="flex w-full bg-stone-900 h-60 text-2xl text-white items-center justify-center mb-10">CTA</div>
       
       <Text className="pb-4 text-2xl text-white font-bold">Hot Items 🔥</Text>
-      <div className="grid grid-cols-2 gap-8 pb-8">
+      <div className="grid md:grid-cols-2 gap-8 pb-8">
       {
         items.map( (item, i) => (
           <div key={`item-${i}`} className="relative cursor-pointer" onClick={handleClick}>

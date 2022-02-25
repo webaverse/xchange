@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 
 import PreviewBadge from './preview-badge.js'
-import PreviewInfo from './preview-info.js'
+import PreviewAlert from './preview-alert.js'
 import PreviewActions from './preview-actions'
 function Preview({mode, item}) {
     
@@ -24,7 +24,7 @@ function Preview({mode, item}) {
                 <img src={item && item['src']} alt="Preview" />
             </div>
             {
-                showInfo ? <PreviewInfo /> : null
+                showInfo ? <PreviewAlert /> : null
             }
             <PreviewActions />
         </>

@@ -1,8 +1,9 @@
 import Text from 'components/text'
+import Alert from 'components/alert'
 
-function PreviewInfo() {
+function PreviewAlert() {
     return (
-        <div className='alert-toast fixed bottom-4 backdrop-blur-sm bg-neutral-850/90  text-white flex flex-col w-2/5 p-4 z-10'>
+        <Alert>
             <div className='flex flex-row justify-between w-full'>
                 <Text>Contact Address</Text>
                 <Text>0xd2f6...32c6</Text>
@@ -19,7 +20,7 @@ function PreviewInfo() {
                 <Text>Blockchain</Text>
                 <Text>Ethereum</Text>
             </div>
-        </div>
+        </Alert>
     )
 }
 
@@ -28,4 +29,4 @@ function PreviewInfo() {
 //     1930
 // Token Standard   ERC-721
 // Blockchain   Ethereum
-export default PreviewInfo
+export default PreviewAlert
