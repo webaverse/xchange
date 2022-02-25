@@ -18,7 +18,7 @@ const demo = [{
     percent: '2%'
 }]
 
-function PrevieActions() {
+function PrevieInfo() {
     return (
         <div className="sticky bottom-4 grid grid-cols-2 gap-8 md:grid-cols-4">
             {demo.map( (item, i) => (
@@ -32,4 +32,4 @@ function PrevieActions() {
     )
 }
 
-export default PrevieActions
+export default PrevieInfo

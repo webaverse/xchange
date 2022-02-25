@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 
 import PreviewBadge from './preview-badge.js'
 import PreviewAlert from './preview-alert.js'
-import PreviewActions from './preview-actions'
+import PrevieInfo from './preview-info'
 function Preview({mode, item}) {
     
     const [showInfo, setShowInfo] = useState(false) 
@@ -26,7 +26,7 @@ function Preview({mode, item}) {
             {
                 showInfo ? <PreviewAlert /> : null
             }
-            <PreviewActions />
+            <PrevieInfo />
         </>
     )
 }
