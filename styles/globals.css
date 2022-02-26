@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h5 {
+    font-size: 26px;
+}
+h6 {
+    font-size: 22px;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    background-color: #333;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 100px;
+    width: 10px;
+}
+
+
+/* Toast */
+.alert-toast {
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+        opacity: 1
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+        opacity: 1
+    }
+}

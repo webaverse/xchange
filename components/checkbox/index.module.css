@@ -1,0 +1,33 @@
+.container {
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    min-height: 17px;
+    min-width: 17px;
+    background-color: #3b3b3b;
+    border: 1px solid #fff;
+    margin-right: 9px;
+  }
+
+  .container input:checked ~ div {
+    color: white;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #28af91;
+  }
